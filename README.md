@@ -13,7 +13,7 @@ package main
 
 import "core:fmt"
 import "core:os"
-import dotenv "pkgs/dotenv"
+import "pkgs:dotenv"
 
 main :: proc() {
 	_ = dotenv.load() // reads "./.env"; missing file is silently ignored
