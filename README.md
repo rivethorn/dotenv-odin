@@ -16,7 +16,10 @@ import "core:os"
 import "pkgs:dotenv"
 
 main :: proc() {
-	_ = dotenv.load() // reads "./.env"; missing file is silently ignored
+	applied, err := dotenv.load() // reads "./.env"; missing file is silently ignored.
+	// and handle the error
+	// or simply do
+	dotenv.load()
 	fmt.println(os.get_env("PORT", context.allocator))
 }
 ```
