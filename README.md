@@ -1,5 +1,9 @@
 # dotenv
 
+<div align="center" style="">
+    <img src="assets/banner.png" style="height: auto; width: 30vw; object-fit: cover"/>
+</div>
+
 An [Odin](https://odin-lang.org) library managed via **Mimir** for reading
 `.env` files. Call one function at startup and every variable becomes
 available through the usual `os.get_env`.
